@@ -5,13 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/calculator-1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora</title>
 </head>
 
 <body>
+    <main>
+        <div class="result-box">
 
+            <div class="calculation-area">
+                <p id="calculation"></p>
+            </div>
+            <div class="result-area">
+                <p id="result"></p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="buttons">
+            <table class="table-buttons">
+                <tr>
+                    <td class="table-row"><button class="buttons-items aside-buttons"
+                            onclick="clean()"><span>C</span></button></td>
+                    <td class="table-row"><button class="buttons-items aside-buttons" onclick="back()"><img
+                                src="./img/erase-orange.png" class="erase-img"></button>
+                    </td>
+                    <td class="table-row"><button class="buttons-items aside-buttons"
+                            onclick="insertOperator('/')">/</button></td>
+                    <td class="table-row"><button class="buttons-items aside-buttons" onclick="
+                            insertOperator('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('7')">7</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('8')">8</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('9')">9</button></td>
+                    <td class="table-row"><button class="buttons-items aside-buttons"
+                            onclick="insertOperator('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('4')">4</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('5')">5</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('6')">6</button></td>
+                    <td class="table-row"><button class="buttons-items aside-buttons"
+                            onclick="insertOperator('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('1')">1</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('2')">2</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('3')">3</button></td>
+                    <td rowspan="2" class="table-row" style=" height: 50%;"><button class="buttons-items aside-buttons"
+                            onclick="toCalculate()">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="table-row" style="width: 50%;"><button class="buttons-items"
+                            onclick="insertValue('0')">0</button></td>
+                    <td class="table-row"><button class="buttons-items" onclick="insertValue('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./js/main.js">
+
+    </script>
 </body>
 
 </html>

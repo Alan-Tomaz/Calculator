@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0c0c0c;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 50vw;
+    height: 100%;
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 25%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.result-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 25vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+}
+
+.calculation-area {
+    position: absolute;
+    top: 10%;
+    width: 95%;
+    height: 35%;
+    text-align: end;
+    font-size: 18px;
+    opacity: 40%;
+    line-break: anywhere;
+    color: white;
+}
+
+.result-area {
+    position: absolute;
+    bottom: 10%;
+    width: 95%;
+    height: 40%;
+    font-size: 7rem;
+    line-height: 7rem;
+    text-align: end;
+    color: white;
+}
+
+.line {
+    width: 95%;
+    height: 0px;
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    opacity: 10%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
+.buttons {
+    width: 100%;
+    height: 74vh;
+}
+
+.table-buttons {
+    width: 100%;
+    height: 100%;
+}
+
+.table-row {
+    margin: 10%;
+    width: 20%;
+    height: 20%;
+}
+
+.buttons-items {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.buttons-items .erase-img {
+    width: 64px;
+    height: 64px;
+}
+
+.aside-buttons {
+    color: rgb(201, 72, 25);
+}
+
+.buttons-items:hover {
+    background-color: #111111;
+}
+
+.buttons-items:active {
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 75vw;
+        left: 12%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100vw;
+        left: 0;
+    }
+
+    .result-area {
+        font-size: 60px;
+    }
+
+    .buttons-items {
+        font-size: 26px;
+    }
+
+    .buttons-items .erase-img {
+        width: 32px;
+        height: 32px;
+    }
+}
